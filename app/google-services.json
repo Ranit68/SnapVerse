@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "976905799711",
+    "firebase_url": "https://onlinestore-66cc2-default-rtdb.firebaseio.com",
+    "project_id": "onlinestore-66cc2",
+    "storage_bucket": "onlinestore-66cc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976905799711:android:4bf3d5d71d9a9729e6ed2a",
+        "android_client_info": {
+          "package_name": "com.example.onlinestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhv39OatwkgKMuS7fJd6oana4BFnkmHpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976905799711:android:c9f55eda67600a46e6ed2a",
+        "android_client_info": {
+          "package_name": "com.example.socialmedia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhv39OatwkgKMuS7fJd6oana4BFnkmHpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

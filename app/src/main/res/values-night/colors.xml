@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="textColor"
+        tools:ignore="MissingDefaultResource">#FFFFFF</color>
+    <color name="sign_up_page"
+        tools:ignore="MissingDefaultResource">#1A1A1A</color>
+</resources>

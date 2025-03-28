@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- User Info Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageItem"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avtar"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/usernameItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/followButtonIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:minWidth="120dp"
+            android:padding="8dp"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/follow_btn_bg"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagePost"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/relativeLayout">
+
+
+    <VideoView
+        android:id="@+id/videoPost"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="500dp"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/muteButtonP"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        app:tint="@color/textColor"
+        android:visibility="gone"
+        android:src="@drawable/mute"
+        android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_unlike" />
+        <TextView
+            android:id="@+id/likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="999+"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:id="@+id/commentButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/textColor"
+            android:src="@drawable/ic_comment"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:layout_marginBottom="6dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/shareButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/textColor"
+            android:src="@drawable/ic_send"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Caption"
+        android:textColor="@color/textColor"
+        android:maxLines="2"
+        android:textSize="14sp"
+        android:paddingTop="5dp" />
+
+</LinearLayout>
